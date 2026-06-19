@@ -1,0 +1,187 @@
+*{
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:
+    linear-gradient(135deg,#667eea,#764ba2);
+    padding:20px;
+}
+
+
+/* Header */
+.Header{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    width:100%;
+    max-width:1000px;
+    text-align:center;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 15px 30px #0003;
+    border:1px solid #5678c2;
+    margin-bottom:25px;
+}
+
+
+.Header h1{
+    color:white;
+    font-size:30px;
+    margin:0;
+}
+
+
+/* container */
+.container{
+
+    width:100%;
+    max-width:1000px;
+
+    display:flex;
+    gap:20px;
+
+}
+
+
+/* card */
+.card{
+
+    background:white;
+
+    flex:1;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 30px #0003;
+
+}
+
+
+h2{
+
+    text-align:center;
+
+}
+
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin:15px 0;
+
+    font-size:18px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+}
+
+
+button{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#667eea;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+
+button:hover{
+
+    background:#5568d9;
+
+}
+
+
+
+.result{
+
+    margin-top:20px;
+
+    padding:15px;
+
+    background:#f2f3ff;
+
+    border-radius:10px;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+
+
+/* ===================
+    Mobile Responsive
+=================== */
+
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+        display:block;
+    }
+
+
+    .Header{
+        width:100%;
+        margin:10px 0;
+        
+    }
+    .Header h1{
+        font-size:24px;
+    }
+
+
+    .container{
+        display:flex !important;
+        flex-direction:column !important;
+        width:100% !important;
+        max-width:100% !important;
+    }
+
+
+    .card{
+        width:100% !important;
+        flex:unset !important;
+        margin-bottom:20px;
+    }
+
+
+    input{
+        font-size:16px;
+    }
+
+
+    button{
+        font-size:16px;
+    }
+
+}

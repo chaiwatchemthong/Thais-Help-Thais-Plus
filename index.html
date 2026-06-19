@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>ไทยช่วยไทย 60/40</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+         <div class="Header">
+            <h1>ไทยช่วยไทย 60/40 คำนวนเงินแต่ละประเภท</h1>
+         </div>
+
+        <div class="container">
+            
+            <!-- เงินเรา -->
+            <div class="card">
+
+                <h2>👤 เงินฉันที่เหลือในแอพเป๋าตัง</h2>
+
+                <input
+                    id="myMoney"
+                    type="number"
+                    placeholder="เงินฉันเหลือ">
+
+                <button onclick="calculateMyMoney()">
+                    คำนวณ
+                </button>
+
+                <div class="result" id="myResult">
+                    ผลลัพธ์
+                </div>
+
+            </div>
+
+            <!-- ราคาของ -->
+
+            <div class="card">
+
+                <h2>🛒 ราคาของที่ต้องการซื้อ</h2>
+
+                <input
+                    id="productPrice"
+                    type="number"
+                    placeholder="ราคาของ">
+
+                <button onclick="calculateProduct()">
+                    คำนวณ
+                </button>
+
+                <div class="result" id="productResult">
+                    ผลลัพธ์
+                </div>
+
+            </div>
+
+            <!-- เงินรัฐ -->
+
+            <div class="card">
+
+                <h2>เงินของรัฐที่เหลือ *ช่วยมากสุด 200 บาท / วัน</h2>
+
+                <input
+                    id="stateMoney"
+                    type="number"
+                    placeholder="เงินรัฐเหลือ">
+
+                <button onclick="calculateState()">
+                    คำนวณ
+                </button>
+
+                <div class="result" id="stateResult">
+                    ผลลัพธ์
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
